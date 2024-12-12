@@ -1,0 +1,219 @@
+/* style.css */
+
+/* Font Imports - moved from HTML to the CSS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Old Standard TT', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    background-image: url('https://i.pinimg.com/736x/04/94/6f/04946f88d85188e33a6b4f62fd5c5e09.jpg'); /* Soft gray background */
+    background-size: cover; /* Ensures the image covers the entire element */ 
+    background-position: center; /* Centers the image */ 
+    background-repeat: no-repeat;
+    filter: contrast(1.2);
+}
+
+header {
+    padding: 1em 0;
+    text-align: center;
+    background: linear-gradient(to right, #A8E6CE, #DCEDC2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em; /* Slightly bigger nav links */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flash-messages {
+    background-color: rgba(245, 241, 225, 0.774);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700; /*Make the heading heavier*/
+}
+h1{
+     font-size: 2.5em; /*Increase size of h1*/
+}
+h2{
+     font-size: 2em; /*Increase size of h2*/
+}
+
+.form-container {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgba(220, 237, 194, 0.3), rgba(255, 211, 181,0.3));
+    transition: all 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.1em; /* Bigger label text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 10px; /* Slightly more padding for larger input fields */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Old Standard TT', serif;
+    transition: border-color 0.3s ease;
+     font-size: 1.1em; /*Bigger input field text */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #A8E6CE
+}
+
+.form-group input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Increase submit button size */
+    transition: all 0.3s ease;
+    font-weight: bold; /*Bold submit button*/
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #4cae4c;
+    transform: scale(1.03);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.books-list {
+    padding: 0;
+    list-style: none;
+}
+
+.book-item {
+    padding: 12px; /* Slightly more padding for list items */
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.book-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.book-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 1.1em; /* Bigger list item text */
+}
+
+.book-item a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.read-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+    background-color: #4cae4c;
+    transform: scale(1.03);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.error-msg {
+    color: #d9534f;
+    font-size: 1em; /* Make error messages a bit larger */
+}
+
+.book-detail {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    background: linear-gradient(to bottom right, rgba(255, 200, 200, 0.9), rgba(255, 255, 255, 0.9));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    font-size: 1.2em; /* Bigger text for book detail */
+}
+.book-detail p{
+  font-weight: bold;
+}
+
+/* Generic Fade Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to all sections */
+#main-section-home,
+#main-section-books,
+#main-section-user-books,
+#main-section-login,
+#main-section-register,
+#main-section-book-detail {
+    animation: fadeIn 0.8s ease-in-out;
+}

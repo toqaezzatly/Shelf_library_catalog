@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <img src="{{ url_for('static', filename='angel4.png') }}" alt="Angel" class="angel-image">
+    <h1>Edit Book</h1>
+    <form method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="{{book.title}}" required><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" value="{{book.author}}" required><br>
+
+        <label for="publication_year">Publication Year:</label><br>
+        <input type="number" id="publication_year" name="publication_year" value="{{book.publication_year}}" required><br><br>
+
+        <input type="submit" value="Edit Book">
+    </form>
+    <a href="{{ url_for('book_details', isbn = isbn) }}">Cancel</a>
+    <img src="{{ url_for('static', filename='bird4.png') }}" alt="Bird" class="angel-image">
+{% endblock %}

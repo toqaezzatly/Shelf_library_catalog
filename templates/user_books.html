@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div id="main-section-user-books">
+    <h2>Your Recorded Books</h2>
+    {% if user_books %}
+        <ul class="books-list">
+        {% for user_book in user_books %}
+             <li class="book-item">
+                <a href="{{ url_for('book_detail', book_id=user_book.book_id) }}">
+                <strong>{{user_book.book.title}}</strong> by {{user_book.book.author}}
+                </a> 
+             </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+      <p>You have not recorded any books yet</p>
+    {% endif %}
+  </div>
+{% endblock %}
