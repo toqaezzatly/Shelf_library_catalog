@@ -8,7 +8,7 @@ graph LR
         ds2((Books DB))
         p3[3. Track User Books]
         ds3((UserBooks DB))
-         p4[4. Display Books]
+        p4[4. Display Books]
     end
     User -->|User Input, Credentials| p1
     p1 -->|User ID| ds1
@@ -20,5 +20,5 @@ graph LR
     p3 -->|User & Book ID| ds3
     ds3 -->|User Book Data| p3
     p3 -->|Book Data, User Book Data| p4
-      p4 -->| Book Listing and Details, User Specific Books|
+    p4 -->|Book Listing and Details, User Specific Books| User
 ```
