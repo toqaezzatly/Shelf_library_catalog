@@ -73,3 +73,38 @@ Follow these steps to get the "Shelf" application running on your local machine.
 7.  **Open in browser:** Navigate to `http://127.0.0.1:5000/` in your web browser.
 
 ## Directory Structure
+```text
+Project Root
+├── instance
+│   ├── inventory.db
+│   ├── shelf.db
+│   └── site.db
+├── static
+│   ├── style.css
+│   └── Old_Standard_TT (Font)
+├── templates
+│   ├── add_book.html
+│   ├── base.html
+│   ├── book_detail.html
+│   ├── books.html
+│   ├── edit_book.html
+│   ├── home.html
+│   ├── index.html
+│   ├── login.html
+│   ├── not_found.html
+│   ├── register.html
+│   └── user_books.html
+├── app.py
+├── forms.py
+├── models.py
+├── requirements.txt
+├── .env
+├── .gitignore
+├── DB.sql
+├── DFD.md
+├── Functional Diagram.md
+├── README.md
+├── Shelf_SRS.pdf
+├── sequence Diagram.md
+└── erDiagram.md
+```
