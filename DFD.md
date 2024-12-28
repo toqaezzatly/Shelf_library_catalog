@@ -2,13 +2,13 @@
 graph LR
     User(User)
     subgraph Dataflow
-        p1[1. Authenticate User]
-        ds1((Users DB))
-        p2[2. Manage Books]
-        ds2((Books DB))
-        p3[3. Track User Books]
-        ds3((UserBooks DB))
-        p4[4. Display Books]
+        p1[Authenticate User]
+        ds1[(Users DB)]
+        p2[Manage Books]
+        ds2[(Books DB)]
+        p3[Track User Books]
+        ds3[(UserBooks DB)]
+        p4[Display Books]
     end
     User -->|User Input, Credentials| p1
     p1 -->|User ID| ds1
