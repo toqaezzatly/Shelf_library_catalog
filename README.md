@@ -42,13 +42,13 @@ Follow these steps to get the "Shelf" application running on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [repository_url]
-    cd [repository_name]
+    git clone https://github.com/toqaezzatly/Shelf_library_catalog/
+   
     ```
 
 2.  **Create a virtual environment (recommended):**
     ```bash
-    python -m venv venv
+    python -m venv .venv
     ```
 
 3.  **Activate the virtual environment:**
@@ -56,10 +56,7 @@ Follow these steps to get the "Shelf" application running on your local machine.
         ```bash
         venv\Scripts\activate
         ```
-    *   On macOS and Linux:
-        ```bash
-        source venv/bin/activate
-        ```
+    
 
 4.  **Install dependencies:**
     ```bash
